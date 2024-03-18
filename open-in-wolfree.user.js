@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Open in Wolfree
-// @version      1.1
+// @version      1.2
 // @description  Adds an "Open in Wolfree" button to Wolfram Alpha.
 // @author       Trainmaster2
 // @icon         https://www.wolframalpha.com/_next/static/images/favicon_1zbE9hjk.ico
@@ -18,7 +18,8 @@ const wolfreeHostname = "wolfree.gitlab.io";
 
     const insert = () => {
         if (window.location.pathname === "/input" && (!btn || !document.getElementById(btn.id))) {
-            let bdy = document.getElementsByClassName('sc-9f69335b-0 cWuvsj')[0];
+            let bdy = document.getElementsByClassName("computeButton")[0];
+            while (bdy.parentElement.tagName !== "MAIN") {bdy = bdy.parentElement;}
             if (bdy) {
                 bdy.style.position = "relative";
                 bdy.style.paddingBottom = "50px";
