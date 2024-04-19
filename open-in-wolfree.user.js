@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Open in Wolfree
-// @version      1.2
+// @version      1.3
 // @description  Adds an "Open in Wolfree" button to Wolfram Alpha.
 // @author       Trainmaster2
 // @icon         https://www.wolframalpha.com/_next/static/images/favicon_1zbE9hjk.ico
@@ -26,7 +26,7 @@ const wolfreeHostname = "wolfree.gitlab.io";
                 btn = GM_addElement(bdy, "button", {
                     onClick: `window.location.hostname = "${wolfreeHostname}"`,
                     textContent: "Open in Wolfree",
-                    class: "klePGR kJMUaR _3BQD",
+                    class: "ekunyr kJMUaR _3BQD",
                     style: "position: absolute; bottom: 0px;",
                 });
             }
