@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Open in Wolfree
-// @version      1.3
+// @version      1.4
 // @description  Adds an "Open in Wolfree" button to Wolfram Alpha.
 // @author       Trainmaster2
 // @icon         https://www.wolframalpha.com/_next/static/images/favicon_1zbE9hjk.ico
@@ -11,7 +11,7 @@
 // @grant        window.onurlchange
 // ==/UserScript==
 
-const wolfreeHostname = "wolfree.gitlab.io";
+const wolfreeHostname = "wolfree.netlify.app";
 
 {
     let btn = null;
