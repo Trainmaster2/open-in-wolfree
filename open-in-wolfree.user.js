@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Open in Wolfree
-// @version      1.4
+// @version      1.5
 // @description  Adds an "Open in Wolfree" button to Wolfram Alpha.
 // @author       Trainmaster2
 // @icon         https://www.wolframalpha.com/_next/static/images/favicon_1zbE9hjk.ico
@@ -26,7 +26,7 @@ const wolfreeHostname = "wolfree.netlify.app";
                 btn = GM_addElement(bdy, "button", {
                     onClick: `window.location.hostname = "${wolfreeHostname}"`,
                     textContent: "Open in Wolfree",
-                    class: "ekunyr kJMUaR _3BQD",
+                    class: "gipJRX gqpLlX dKvux _3BQD",
                     style: "position: absolute; bottom: 0px;",
                 });
             }
